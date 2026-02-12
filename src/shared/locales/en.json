@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "search": "Search products and categories",
+    "login": "Login",
+    "fav": "Favorites",
+    "cart": "Cart"
+  },
+  "home": {
+    "popular": "Popular",
+    "guarantee": "Low price guarantee",
+    "modern": "Modern market",
+    "benefit": "Useful February",
+    "moms": "For moms and kids"
+  },
+  "cart": {
+    "title": "Your cart",
+    "items": "items",
+    "empty": "Your cart is empty",
+    "empty_desc": "There is nothing in your cart yet. You can browse various products on our site.",
+    "start_shopping": "Start shopping",
+    "deselect_all": "Deselect all",
+    "delivery_tomorrow": "We deliver tomorrow",
+    "seller": "Seller",
+    "remove": "Delete",
+    "your_order": "Your order",
+    "delivery": "Delivery",
+    "free": "Free",
+    "total": "Total",
+    "savings": "Your savings",
+    "checkout": "Proceed to checkout"
+  },
+  "product": {
+    "installment": "sum/month",
+    "add_to_cart": "Add to cart",
+    "buy_now": "Buy in one click",
+    "description": "Description",
+    "available": "In stock",
+    "reviews": "reviews",
+    "back_to_home": "Back to home"
+  }
+}

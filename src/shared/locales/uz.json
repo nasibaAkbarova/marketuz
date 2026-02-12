@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "search": "Mahsulotlar va turkumlar izlash",
+    "login": "Kirish",
+    "fav": "Saralangan",
+    "cart": "Savat"
+  },
+  "home": {
+    "popular": "Mashhur",
+    "guarantee": "Arzon narxlar kafolati",
+    "modern": "Zamonaviy bozor",
+    "benefit": "Foydali fevral",
+    "moms": "Onalar va bolalar uchun"
+  },
+  "cart": {
+    "title": "Savatingiz",
+    "items": "mahsulot",
+    "empty": "Savatchangiz bo'sh",
+    "empty_desc": "Hozircha savatchangizda hech narsa yo'q. Saytimizda turli mahsulotlarni ko'rib chiqishingiz mumkin.",
+    "start_shopping": "Xarid qilishni boshlash",
+    "deselect_all": "Hammasini yechish",
+    "delivery_tomorrow": "Ertaga yetkazib beramiz",
+    "seller": "Sotuvchi",
+    "remove": "Yo'q qilish",
+    "your_order": "Buyurtmangiz",
+    "delivery": "Yetkazib berish",
+    "free": "Bepul",
+    "total": "Jami",
+    "savings": "Tejovingiz",
+    "checkout": "Rasmiylashtirishga o'tish"
+  },
+  "product": {
+    "installment": "so'm/oyiga",
+    "add_to_cart": "Savatchaga qo'shish",
+    "buy_now": "Tugmani bir bosishda xarid qilish",
+    "description": "Tavsif",
+    "available": "Sotuvda bor",
+    "reviews": "sharhlar",
+    "back_to_home": "Asosiy sahifaga qaytish"
+  }
+}
