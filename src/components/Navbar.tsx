@@ -98,15 +98,15 @@ const Navbar: React.FC = () => {
 
           {/* Login/Entry Button */}
           <button onClick={() => setIsLoginModalOpen(true)} className="flex items-center gap-2 p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 transition-all dark:text-white">
-            <AiOutlineUser size={24} />
+            <AiOutlineUser size={24} className='text-blue-500 dark:text-blue-700' />
             <span className="hidden lg:block text-sm font-medium">{t('nav.login')}</span>
           </button>
 
           {/* Favorites */}
           <Link to="/sevimli" className="flex items-center gap-2 p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 transition-all relative dark:text-white">
-            <AiOutlineHeart size={24} />
+            <AiOutlineHeart size={24} className='text-red-500' />
             {favorites.length > 0 && (
-              <span className="absolute top-1 right-1 bg-uzum-primary text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-800">
+              <span className="absolute top-1 right-1 bg-uzum-primary bg-blue-700 dark:bg-blue-900 text-white text-8px font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-800">
                 {favorites.length}
               </span>
             )}
@@ -115,9 +115,9 @@ const Navbar: React.FC = () => {
 
           {/* Cart */}
           <Link to="/savatcha" className="flex items-center gap-2 p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 transition-all relative dark:text-white">
-            <AiOutlineShoppingCart size={24} />
+            <AiOutlineShoppingCart size={24} className='text-gray-600 dark:text-blue-700' />
             {cart.length > 0 && (
-              <span className="absolute top-1 right-1 bg-uzum-primary text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-800">
+              <span className="absolute top-1 right-1 bg-uzum-primary bg-blue-700 dark:bg-blue-900 text-white text-8px font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-800">
                 {cart.reduce((sum, item) => sum + item.quantity, 0)}
               </span>
             )}

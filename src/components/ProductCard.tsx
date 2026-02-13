@@ -58,7 +58,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             onClick={() => addToCart(product)}
             className="p-2 border border-gray-200 dark:border-slate-600 rounded-full hover:bg-uzum-primary hover:text-white transition-all duration-300 dark:text-white active:scale-90"
           >
-            <AiOutlineShoppingCart size={22} />
+            <AiOutlineShoppingCart size={22} className='text-blue-600' />
           </button>
         </div>
       </div>
