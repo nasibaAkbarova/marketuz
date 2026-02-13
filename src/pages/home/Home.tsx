@@ -3,6 +3,7 @@ import { products } from '../../data/data';
 import { useAppContext } from '../../context/AppContext';
 import ProductCard from '../../components/ProductCard';
 import Accordion from '../accardion/Accardion';
+import ProductCarousel from '../ProductCarousel/ProductCarousel';
 
 const Home: React.FC = () => {
   const { t } = useAppContext();
@@ -45,8 +46,11 @@ const Home: React.FC = () => {
           {products.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
+
         </div>
+
       </section>
+      <ProductCarousel/>
     </div>
   );
 };

@@ -34,12 +34,18 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 bg-white/95 dark:bg-slate-800/95 backdrop-blur-md shadow-sm transition-colors duration-300 border-b border-gray-100 dark:border-slate-700">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 group shrink-0">
-          <div className="w-10 h-10 bg-uzum-primary rounded-lg flex items-center justify-center group-hover:rotate-6 transition-transform">
-            <span className="text-white dark:text-blue-600 font-black text-2xl">U</span>
-          </div>
-          <span className="text-2xl font-black text-uzum-primary hidden sm:block tracking-tight">uzum market</span>
-        </Link>
+      <Link to="/" className="flex items-center gap-2 group shrink-0">
+  <div className="w-10 h-10 bg-uzum-primary rounded-lg flex items-center justify-center group-hover:rotate-6 transition-transform">
+    <span className="text-blue-700 dark:text-white font-black text-2xl">
+      UZ
+    </span>
+  </div>
+
+  <span className="text-2xl font-black text-uzum-primary text-blue-700 dark:text-white tracking-tight">
+    Market 
+  </span>
+</Link>
+
 
         {/* Search Bar */}
         <div className="flex-1 max-w-2xl relative hidden md:block">
@@ -57,7 +63,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-2 lg:gap-6">
           {/* Dark Mode Toggle */}
           <button onClick={toggleTheme} className="p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 dark:text-white transition-all active:scale-95">
-            {theme === 'light' ? <AiOutlineMoon size={22} /> : <AiOutlineSun size={22} />}
+            {theme === 'light' ? <AiOutlineMoon size={22} className='text-blue-700' /> : <AiOutlineSun size={22} className='text-yellow-300' />}
           </button>
 
           {/* Language Switcher - NEW DESIGN AS REQUESTED */}
@@ -117,7 +123,7 @@ const Navbar: React.FC = () => {
           <Link to="/savatcha" className="flex items-center gap-2 p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-slate-700 transition-all relative dark:text-white">
             <AiOutlineShoppingCart size={24} className='text-gray-600 dark:text-blue-700' />
             {cart.length > 0 && (
-              <span className="absolute top-1 right-1 bg-uzum-primary bg-blue-700 dark:bg-blue-900 text-white text-8px font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-800">
+              <span className="absolute top-1 right-1 bg-uzum-primary bg-blue-700 text-white text-8px font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-800">
                 {cart.reduce((sum, item) => sum + item.quantity, 0)}
               </span>
             )}

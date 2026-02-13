@@ -9,7 +9,7 @@ const LoginModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
-      <div className="bg-white dark:bg-slate-800 w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden animate-in fade-in zoom-in duration-300">
+      <div className="bg-violet-400 dark:bg-slate-800 w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden animate-in fade-in zoom-in duration-300">
         <button 
           onClick={() => setIsLoginModalOpen(false)}
           className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 dark:hover:text-white transition-colors"
@@ -20,8 +20,8 @@ const LoginModal: React.FC = () => {
         <div className="p-8 text-center">
           <div className="flex justify-center mb-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-uzum-primary rounded flex items-center justify-center text-white font-bold">U</div>
-              <span className="text-xl font-bold dark:text-white">uzumID</span>
+              <div className="w-8 h-8 bg-uzum-primary rounded flex items-center text-2xl justify-center text-white font-bold">U</div>
+              <span className="text-xl text-blue-700  font-bold dark:text-white">Market.UZ</span>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ const LoginModal: React.FC = () => {
             />
           </div>
 
-          <button className="w-full bg-uzum-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-uzum-primary/90 transition-colors shadow-lg shadow-uzum-primary/25 mb-6">
+          <button className="w-full bg-uzum-primary text-black dark:text-white py-4 rounded-xl font-bold text-lg hover:bg-uzum-primary/90 transition-colors shadow-lg shadow-uzum-primary/25 mb-6">
             Kodni olish
           </button>
 
@@ -45,7 +45,7 @@ const LoginModal: React.FC = () => {
           </p>
 
           <div className="mt-8 pt-6 border-t border-gray-100 dark:border-slate-700">
-            <a href="#" className="text-uzum-primary text-sm font-medium hover:underline">Uzum ID nima?</a>
+            <a href="#" className="text-uzum-primary text-sm font-medium hover:underline  ">Uzum ID nima?</a>
           </div>
         </div>
       </div>

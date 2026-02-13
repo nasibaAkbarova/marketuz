@@ -4,27 +4,29 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import Serum from "../../assets/images/serum.jpg"
+import Maska from "../../assets/images/maska2.jpg"
+import Maska3 from "../../assets/images/maska3.jpg"
 const banners = [
   {
     id: 1,
     title: "Barchasi xobbi uchun",
     subtitle: "Sevimli mashg'ulotlar uchun hamyonbop narxdagi tovarlar",
-    image: "https://images.uzum.uz/cr6f9m74nk8v8p4p8v2g/main_page_banner.jpg",
+    image: Serum,
     bgColor: "bg-[#5c3c24]"
   },
   {
     id: 2,
     title: "Maktabga tayyorgarlik",
     subtitle: "Sifatli o'quv qurollari va kiyimlar",
-    image: "https://images.uzum.uz/cr6fbhr4nk8v8p4p8vbg/main_page_banner.jpg",
+    image: Maska,
     bgColor: "bg-[#1a4a7a]"
   },
   {
     id: 3,
     title: "Yozgi chegirmalar",
     subtitle: "Barcha kiyimlar uchun 50% gacha foyda",
-    image: "https://images.uzum.uz/cr4u6l94nk8v8p4p6v7g/main_page_banner.jpg",
+    image: Maska3,
     bgColor: "bg-[#7000ff]"
   }
 ];
@@ -38,11 +40,11 @@ const Accordion: React.FC = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         loop={true}
-        className="main-banner-swiper rounded-2xl overflow-hidden shadow-lg h-240px md:h-400px"
+className="main-banner-swiper rounded-2xl overflow-hidden shadow-lg h-500px md:h-550px"
       >
         {banners.map((banner) => (
           <SwiperSlide key={banner.id}>
-            <div className={`relative w-full h-full ${banner.bgColor} flex items-center overflow-hidden group`}>
+            <div className={`relative w-full h-120 ${banner.bgColor} flex items-center overflow-hidden group`}>
               {/* Text Content */}
               <div className="container mx-auto px-10 md:px-20 z-10 text-white space-y-2 md:space-y-6">
                 <h2 className="text-3xl md:text-6xl font-black max-w-lg leading-tight animate-in fade-in slide-in-from-left duration-700">
